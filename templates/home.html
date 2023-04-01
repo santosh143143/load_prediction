@@ -1,3 +1,22 @@
-<h1>
-    hello world
-</h1>
+<body>
+    <div class="login">
+<h1>LOAD PREDICTION</h1>
+  <!-- Main Input For Receiving Query to our ML -->
+  <form action="{{ url_for('predict')}}"method="post">
+    <input type="text" name="Month" placeholder="Month" required="required" />
+    	<input type="text" name="Average of temperature" placeholder="temperature" required="required" />
+        <input type="text" name="Average of cloud_cover" placeholder="cloud_cover" required="required" />
+        <input type="text" name="Average of dew_point" placeholder="dew_point" required="required" />
+        <input type="text" name="Average of wind_speed" placeholder="wind_speed" required="required" />
+        <input type="text" name="Average of humidity" placeholder="humidity" required="required" />
+        <input type="text" name="Average of apparent_temperature" placeholder="apparent_temperature" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+  <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
