@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 import streamlit as st
 
-model = pickle.load(open('D:/projects/load_prediction/load_prediction/regmodel.pkl','rb'))
+model = pickle.load(open('regmodel.pkl','rb'))
 #create a function for prediction
 
 def load_prediction(prediction):
